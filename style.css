@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://pbs.twimg.com/media/CXsiKqHUMAAXTGC.jpg);
+  background-image: url(img/tokyo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -19,7 +19,7 @@ div.blur-before {
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
-  background-image: url(https://pbs.twimg.com/media/CXsiKqHUMAAXTGC.jpg);
+  background-image: url(img/tokyo.jpg);
   -webkit-filter: blur(5px) contrast(105%) saturate(105%);
   -webkit-mask-image:-webkit-linear-gradient(90deg, rgba(0,0,0,1) 0, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%);
 }
@@ -36,7 +36,7 @@ div.blur-after {
   background-position: center center;
   background-size: cover;
 
-  background-image: url(https://pbs.twimg.com/media/CXsiKqHUMAAXTGC.jpg);
+  background-image: url(img/tokyo.jpg);
   -webkit-filter: blur(5px) contrast(105%) saturate(105%);
   -webkit-mask-image:-webkit-linear-gradient(270deg, rgba(0,0,0,1) 0, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%);
 }
