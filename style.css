@@ -1,68 +1,29 @@
-/*body {
-  background-image: url(img/tokyo.jpg);
+body {
+  background-image: url(./img/tokyo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  color:white;
+  color: white;
   -webkit-animation: bluranime 2.5s ease 0s 1 normal;
 }
-
-div.blur-before {
-  position:absolute;
-  overflow:hidden;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index: 1;
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-  background-image: url(img/tokyo.jpg);
-  -webkit-filter: blur(5px) contrast(105%) saturate(105%);
-  -webkit-mask-image:-webkit-linear-gradient(90deg, rgba(0,0,0,1) 0, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%);
-}
-
-div.blur-after {
-  position:absolute;
-  overflow:hidden;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index: 1;
-  background-repeat:no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  background-image: url(img/tokyo.jpg);
-  -webkit-filter: blur(5px) contrast(105%) saturate(105%);
-  -webkit-mask-image:-webkit-linear-gradient(270deg, rgba(0,0,0,1) 0, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%);
-}
-
 @-webkit-keyframes bluranime {
-  0% { -webkit-filter: blur(100px); }
-  100% { -webkit-filter: blur(0px); }
+  0% {
+    -webkit-filter: blur(100px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
 }
-
 div#header {
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index: 3;
-  overflow:hidden;
   text-align: center;
   display: block;
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
 }
-
 h1 a {
   font-size: 3em;
   color: white;
   text-decoration: none;
-}*/
+}
