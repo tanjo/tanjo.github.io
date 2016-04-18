@@ -22,12 +22,18 @@ div#header {
   margin-left: auto;
   margin-right: auto;
 }
+div#github {
+  text-align: center;
+}
+div#github a {
+  color: white;
+  text-decoration: none;
+}
 h1 a {
   font-size: 3em;
   color: white;
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
