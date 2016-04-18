@@ -28,7 +28,10 @@ div#github {
   margin-left: auto;
   margin-right: auto;
 }
-div#github a {
+p {
+  text-align: center;
+}
+h3 a {
   color: white;
   text-decoration: underline;
 }
