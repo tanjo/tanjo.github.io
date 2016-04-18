@@ -19,17 +19,8 @@ div#header {
   text-align: center;
   display: block;
   margin-top: 20%;
-  margin-left: auto;
-  margin-right: auto;
-}
-div#github {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 h3 a {
   color: white;
