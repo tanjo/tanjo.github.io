@@ -31,6 +31,8 @@
    "./img/389440253.jpg",
    "./img/396096560.jpg",
    "./img/400004843.jpg",
+   "./img/422631521.mp4",
+   "./img/424325825.gif",
    "./img/426944098.jpg",
    "./img/443417429.jpg",
    "./img/470068666.jpg",
@@ -198,6 +200,17 @@
    "./img/bc25aa72.jpg",
    "./img/c4117368.jpg",
    "./img/c97a6fa0.jpg",
+   "./img/CeNKGTLW8AA-YYn.jpg",
+   "./img/Cf-jAK6W8AEjDuX.jpg",
+   "./img/Cf-jL_kXIAEfIv1.jpg",
+   "./img/CfA_7VZUMAA-QK2.jpg",
+   "./img/CfBO4MAUUAAB94V.jpg",
+   "./img/CfBRhhWUMAA-S9v.jpg",
+   "./img/CfBSlohUUAEJRlK.jpg",
+   "./img/CfBTBnhVIAApznz.jpg",
+   "./img/CfBUaBlUAAAExl7.jpg",
+   "./img/CfBUlYjUsAA93ca.jpg",
+   "./img/CfBUpK1VIAAOL34.jpg",
    "./img/CVdNCyIU4AA7KE8.jpg",
    "./img/CX3eixtUwAAgOs2.jpg",
    "./img/CXrg370UQAAFo0p.jpg",
@@ -217,7 +230,7 @@
    "./img/e95f4add.jpg",
    "./img/efae7c51.jpg",
    "./img/f3570bdf.jpg",
-   "./img/tokyo.jpg",
+   "./img/tokyo.jpg"
  ];
 
 function choose() {
