@@ -1,7 +1,7 @@
 tanjo.github.io
 ===============
 
-[http://tanjo.github.io/](http://tanjo.github.io/)
+[http://tanjo.xyz/](http://www.tanjo.xyz/)
 
 ## 画像の編集方法
 
