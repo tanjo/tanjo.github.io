@@ -2,8 +2,7 @@ body {
   background-image: url(./img/tokyo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  
-  background-size: cover;
+
   color: white;
   -webkit-animation: bluranime 2.5s ease 0s 1 normal;
 }
