@@ -1,12 +1,10 @@
 body {
+  height: 0;
+  background-size: contain;  
   background-image: url(./img/tokyo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;  
   color: white;
   -webkit-animation: bluranime 2.5s ease 0s 1 normal;
 }
