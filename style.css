@@ -42,6 +42,4 @@ ul {
 p a {
   color: white;
   text-decoration: none;
-  -webkit-text-stroke-color: #ccc;
-  -webkit-text-stroke-width: 1px;
 }
