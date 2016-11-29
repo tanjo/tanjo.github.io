@@ -31,6 +31,8 @@ h1 a {
   font-size: 3em;
   color: white;
   text-decoration: none;
+  -webkit-text-stroke-color: #ccc;
+  -webkit-text-stroke-width: 1px;
 }
 ul {
   list-style: none;
@@ -40,4 +42,6 @@ ul {
 p a {
   color: white;
   text-decoration: none;
+  -webkit-text-stroke-color: #ccc;
+  -webkit-text-stroke-width: 1px;
 }
