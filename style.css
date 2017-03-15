@@ -17,9 +17,12 @@ body {
   }
 }
 div#footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  text-align: center;
+  display: block;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20%;
 }
 div#header {
   text-align: center;
