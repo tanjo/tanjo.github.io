@@ -16,6 +16,11 @@ body {
     -webkit-filter: blur(0px);
   }
 }
+div#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 div#header {
   text-align: center;
   display: block;
