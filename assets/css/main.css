@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box
+}
+
 body, main, .wrapper {
   font-family: PT Sans,Helvetica Neue,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS PGothic,sans-serif;
   background-color: rgba(0, 0, 0, 0.0);
