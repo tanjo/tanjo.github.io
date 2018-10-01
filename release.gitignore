@@ -1,0 +1,5 @@
+# all ignore
+*
+# white list
+!_site/
+!_site/*
