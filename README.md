@@ -1,4 +1,4 @@
 tanjo.github.io
 ===============
 
-http://tanjo.github.io
+https://tanjo.github.io
