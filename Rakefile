@@ -8,16 +8,11 @@ namespace :jekyll do
   desc 'build'
   task :build do
     sh "bundle install --path vendor/bundle"
-    sh "JEKYLL_ENV=production bundle exec jekyll build"
+    sh "JEKYLL_ENV=production bundle exec jekyll build --destination master"
   end
 
-  desc 'debug'
-  task :debug do
-    sh "cp debug.gitignore .gitignore"
-  end
-
-  desc 'release'
-  task :release do
-    sh "cp release.gitignore .gitignore"
+  desc 'clone'
+  task :clone do
+    sh "git clone --branch master --depth 1 git@github.com:tanjo/tanjo.github.io.git master"
   end
 end
