@@ -1,8 +1,12 @@
-# Site settings
-name: tanjo
+title: tanjo
 description: "Android / iOS / Image Processing"
 url: ""
 blog_url: https://tanjoin.hatenablog.com/
 github_username:  tanjo
 twitter_username: tanjoin
+facebook_username: tanjoyuuki
+qiita_username: tanjo
+blog_url: https://tanjoin.hatenablog.com/
+amazon_wishlist_url: http://amzn.asia/9VJOpSn
+bitcoin_address: 3HtPPJHtbNwhKD8Vs3wbwWEUKqPzmSXH6H
 markdown: kramdown
