@@ -1,0 +1,14 @@
+title: tanjo
+description: "Android / iOS / Image Processing"
+url: "https://tanjo.github.io"
+blog_url: https://tanjoin.hatenablog.com
+github_username:  tanjo
+twitter_username: tanjoin
+facebook_username: tanjoyuuki
+qiita_username: tanjo
+amazon_wishlist_url: http://amzn.asia/9VJOpSn
+bitcoin_address: 3HtPPJHtbNwhKD8Vs3wbwWEUKqPzmSXH6H
+youtube_channel_url: https://www.youtube.com/channel/UCchQfroktUESNydX_Kvkisw
+stackoverflow_url: https://stackoverflow.com/users/9589330/tanjoin
+markdown: kramdown
+exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor', 'assets/mdp', 'assets/mov', 'assets/img']
