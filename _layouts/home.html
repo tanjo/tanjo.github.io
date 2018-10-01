@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  <img src="{{ site.url }}/assets/images/background.jpg" id="fullscreen">
+  <img src="{{ site.url }}/assets/images/background.png" id="fullscreen">
   <div class="profile">
     <img src="{{ site.url }}/assets/images/icon.png" id="avatar">
     <h1>{{ site.title }}</h1>
@@ -48,7 +48,7 @@ layout: default
         {% if site.youtube_channel_url %}
         <li>
           <a class="fab fa-2x fa-youtube" href="{{ site.youtube_channel_url }}">
-            <span>Youtube</span>
+            <span class="description">Youtube</span>
           </a>
         </li>
         {% endif %}
@@ -61,7 +61,7 @@ layout: default
         {% endif %}
         {% if site.bitcoin_address %}
         <li>
-          <a class="fab fa-bitcoin">
+          <a class="fab fa-2x fa-bitcoin">
             <span class="description">Bitcoin</span>
           </a>
         </li>
