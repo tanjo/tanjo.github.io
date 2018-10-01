@@ -8,7 +8,7 @@ namespace :jekyll do
   desc 'build'
   task :build do
     sh "bundle install --path vendor/bundle"
-    sh "bundle exec jekyll build"
+    sh "JEKYLL_ENV=production bundle exec jekyll build"
   end
 
   desc 'debug'
