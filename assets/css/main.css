@@ -150,7 +150,9 @@ h3 {
     display: inline-block;
     color: white;
     font-family: Arial;
-    margin-left: 40px;
+    margin-left: 5px;
+    font-size: 0.9em;
+    font-weight: 100;
   }
 
   .home {
