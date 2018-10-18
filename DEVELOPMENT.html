@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://tanjo.github.io/assets/images/icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://tanjo.github.io/assets/images/icon_144.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://tanjo.github.io/assets/css/main.css">
+</head>
+<body><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="development">Development</h1>
+
+<h2 id="release">Release</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rake jekyll:clone
+rake jekyll:build
+pushd master
+git commit -m "Update files"
+git push origin master
+popd
+</code></pre></div></div>
+
+      </div>
+    </main></body>
+</html>
