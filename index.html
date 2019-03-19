@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://tanjo.github.io/assets/css/main.css">
   <script type="text/javascript" src="https://tanjo.github.io/assets/js/clipboard.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script href="https://tanjo.github.io/assets/js/bs.js"></script>
 </head>
 <body><main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -19,74 +24,68 @@
     <h3>Android / iOS / Image Processing</h3>
     <div id="sns">
       <ul>
-        
-        <li>
-          <a class="fab fa-2x fa-twitter" href="https://twitter.com/tanjoin">
-            <span class="description">Twitter</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="fab fa-2x fa-github" href="https://github.com/tanjo">
-            <span class="description">GitHub</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="fab fa-2x fa-facebook" href="https://facebook.com/tanjoyuuki">
-            <span class="description">facebook</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="fab fa-2x fa-stack-overflow" href="https://stackoverflow.com/users/9589330/tanjoin">
-            <span class="description">stack of</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="far fa-2x fa-question-circle" href="https://qiita.com/tanjo">
-            <span class="description">Qiita</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="fab fa-2x fa-youtube" href="https://www.youtube.com/channel/UCchQfroktUESNydX_Kvkisw">
-            <span class="description">Youtube</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="fas fa-2x fa-feather-alt" href="https://tanjoin.hatenablog.com">
-            <span class="description">Blog</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="fab fa-2x fa-bitcoin clipboard" data-clipboard="3HtPPJHtbNwhKD8Vs3wbwWEUKqPzmSXH6H">
-            <span class="description">Bitcoin</span>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="fab fa-2x fa-amazon" href="http://amzn.asia/9VJOpSn">
-            <span class="description">Wish List</span>
-          </a>
-        </li>
-        
+    
+    <li>
+      <a class="fab fa-2x fa-twitter text-white no-decoration" href="https://twitter.com/tanjoin">
+        <span class="description">Twitter</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="fab fa-2x fa-github text-white no-decoration" href="https://github.com/tanjo">
+        <span class="description">GitHub</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="fab fa-2x fa-facebook text-white no-decoration" href="https://facebook.com/tanjoyuuki">
+        <span class="description">facebook</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="fab fa-2x fa-stack-overflow text-white no-decoration" href="https://stackoverflow.com/users/9589330/tanjoin">
+        <span class="description">stack of</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="far fa-2x fa-question-circle text-white no-decoration"
+        href="https://qiita.com/tanjo">
+        <span class="description">Qiita</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="fab fa-2x fa-youtube text-white no-decoration" href="https://www.youtube.com/channel/UCchQfroktUESNydX_Kvkisw">
+        <span class="description">Youtube</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="fas fa-2x fa-feather-alt text-white no-decoration" href="https://tanjoin.hatenablog.com">
+        <span class="description">Blog</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="fab fa-2x fa-bitcoin clipboard text-white no-decoration"
+        data-clipboard="3HtPPJHtbNwhKD8Vs3wbwWEUKqPzmSXH6H" data-toggle="tooltip" data-placement="top"
+        title="Copy!">
+        <span class="description">Bitcoin</span>
+      </a>
+    </li>
+     
+    <li>
+      <a class="fab fa-2x fa-amazon text-white no-decoration" href="http://amzn.asia/9VJOpSn">
+        <span class="description">Wish List</span>
+      </a>
+    </li>
+    
       </ul>
     </div>
   </div>
 </div>
-
       </div>
     </main></body>
 </html>
