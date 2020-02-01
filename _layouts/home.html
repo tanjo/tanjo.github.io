@@ -67,6 +67,18 @@ layout: default
         <span class="description">Wish List</span>
       </a>
     </li>
+    {% endif %}{% if site.note_url %}
+    <li>
+      <a class="far fa-2x fa-flip-both fa-sticky-note text-white no-decoration" href="{{ site.note_url }}">
+        <span class="description">note</span>
+      </a>
+    </li>
+    {% endif %}{% if site.note_url %}
+    <li>
+      <a class="fab fa-2x fa-stripe-s text-white no-decoration" href="{{ site.scrapbox_url }}">
+        <span class="description">Scrapbox</span>
+      </a>
+    </li>
     {% endif %}
       </ul>
     </div>
