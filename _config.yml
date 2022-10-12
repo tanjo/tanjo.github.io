@@ -13,5 +13,5 @@ stackoverflow_url: https://stackoverflow.com/users/9589330/tanjoin
 note_url: https://note.com/tanjoin
 scrapbox_url: https://scrapbox.io/tanjoin/
 markdown: kramdown
-exclude: ['DEVELOPMENT.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor', 'assets/mdp', 'assets/mov', 'assets/img', '.bundle/config']
+exclude: ['DEVELOPMENT.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor', 'assets/mdp', 'assets/mov', 'assets/img', '.bundle/config', '.ruby-version']
 baseurl: ""

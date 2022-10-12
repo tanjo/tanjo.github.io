@@ -10,76 +10,88 @@ layout: default
     <h3>{{ site.description }}</h3>
     <div id="sns">
       <ul>
-    {% if site.twitter_username %}
-    <li>
-      <a class="fab fa-2x fa-twitter text-white no-decoration" href="https://twitter.com/{{ site.twitter_username }}">
-        <span class="description">Twitter</span>
-      </a>
-    </li>
-    {% endif %} {% if site.github_username %}
-    <li>
-      <a class="fab fa-2x fa-github text-white no-decoration" href="https://github.com/{{ site.github_username }}">
-        <span class="description">GitHub</span>
-      </a>
-    </li>
-    {% endif %} {% if site.facebook_username %}
-    <li>
-      <a class="fab fa-2x fa-facebook text-white no-decoration" href="https://facebook.com/{{ site.facebook_username }}">
-        <span class="description">facebook</span>
-      </a>
-    </li>
-    {% endif %} {% if site.stackoverflow_url %}
-    <li>
-      <a class="fab fa-2x fa-stack-overflow text-white no-decoration" href="{{ site.stackoverflow_url }}">
-        <span class="description">stack of</span>
-      </a>
-    </li>
-    {% endif %} {% if site.qiita_username %}
-    <li>
-      <a class="far fa-2x fa-question-circle text-white no-decoration"
-        href="https://qiita.com/{{ site.qiita_username }}">
-        <span class="description">Qiita</span>
-      </a>
-    </li>
-    {% endif %} {% if site.youtube_channel_url %}
-    <li>
-      <a class="fab fa-2x fa-youtube text-white no-decoration" href="{{ site.youtube_channel_url }}">
-        <span class="description">Youtube</span>
-      </a>
-    </li>
-    {% endif %} {% if site.blog_url %}
-    <li>
-      <a class="fas fa-2x fa-feather-alt text-white no-decoration" href="{{ site.blog_url }}">
-        <span class="description">Blog</span>
-      </a>
-    </li>
-    {% endif %} {% if site.bitcoin_address %}
-    <li>
-      <a class="fab fa-2x fa-bitcoin clipboard text-white no-decoration"
-        data-clipboard="{{ site.bitcoin_address }}" data-toggle="tooltip" data-placement="top"
-        title="Copy!">
-        <span class="description">Bitcoin</span>
-      </a>
-    </li>
-    {% endif %} {% if site.amazon_wishlist_url %}
-    <li>
-      <a class="fab fa-2x fa-amazon text-white no-decoration" href="{{ site.amazon_wishlist_url }}">
-        <span class="description">Wish List</span>
-      </a>
-    </li>
-    {% endif %}{% if site.note_url %}
-    <li>
-      <a class="far fa-2x fa-rotate-180 fa-sticky-note text-white no-decoration" href="{{ site.note_url }}">
-        <span class="description">note</span>
-      </a>
-    </li>
-    {% endif %}{% if site.note_url %}
-    <li>
-      <a class="fab fa-2x fa-stripe-s text-white no-decoration" href="{{ site.scrapbox_url }}">
-        <span class="description">Scrapbox</span>
-      </a>
-    </li>
-    {% endif %}
+        {% if site.twitter_username %}
+        <li>
+          <a class="fab fa-2x fa-twitter text-white no-decoration"
+            href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="description">Twitter</span>
+          </a>
+        </li>
+        {% endif %} {% if site.github_username %}
+        <li>
+          <a class="fab fa-2x fa-github text-white no-decoration" href="https://github.com/{{ site.github_username }}">
+            <span class="description">GitHub</span>
+          </a>
+        </li>
+        {% endif %} {% if site.facebook_username %}
+        <li>
+          <a class="fab fa-2x fa-facebook text-white no-decoration"
+            href="https://facebook.com/{{ site.facebook_username }}">
+            <span class="description">facebook</span>
+          </a>
+        </li>
+        {% endif %} {% if site.stackoverflow_url %}
+        <li>
+          <a class="fab fa-2x fa-stack-overflow text-white no-decoration" href="{{ site.stackoverflow_url }}">
+            <span class="description">stack of</span>
+          </a>
+        </li>
+        {% endif %} {% if site.qiita_username %}
+        <li>
+          <a class="far fa-2x fa-question-circle text-white no-decoration"
+            href="https://qiita.com/{{ site.qiita_username }}">
+            <span class="description">Qiita</span>
+          </a>
+        </li>
+        {% endif %} {% if site.youtube_channel_url %}
+        <li>
+          <a class="fab fa-2x fa-youtube text-white no-decoration" href="{{ site.youtube_channel_url }}">
+            <span class="description">Youtube</span>
+          </a>
+        </li>
+        {% endif %} {% if site.blog_url %}
+        <li>
+          <a class="fas fa-2x fa-feather-alt text-white no-decoration" href="{{ site.blog_url }}">
+            <span class="description">Blog</span>
+          </a>
+        </li>
+        {% endif %} {% if site.bitcoin_address %}
+        <li>
+          <a class="fab fa-2x fa-bitcoin text-white no-decoration" data-toggle="modal" data-target="#bitcoinSvgModal">
+            <span class="description">Bitcoin</span>
+          </a>
+          <!-- bitcoin svg modal -->
+          <div class="modal fade" id="bitcoinSvgModal" tabindex="-1">
+            <dvi class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="clipboard" src="{{ site.url }}/assets/svg/bitcoin.svg"
+                    data-clipboard="{{ site.bitcoin_address }}" data-toggle="tooltip" data-placement="top"
+                    title="Copy!">
+                </div>
+              </div>
+            </dvi>
+          </div>
+        </li>
+        {% endif %} {% if site.amazon_wishlist_url %}
+        <li>
+          <a class="fab fa-2x fa-amazon text-white no-decoration" href="{{ site.amazon_wishlist_url }}">
+            <span class="description">Wish List</span>
+          </a>
+        </li>
+        {% endif %}{% if site.note_url %}
+        <li>
+          <a class="far fa-2x fa-sticky-note text-white no-decoration" href="{{ site.note_url }}">
+            <span class="description">note</span>
+          </a>
+        </li>
+        {% endif %}{% if site.note_url %}
+        <li>
+          <a class="fab fa-2x fa-stripe-s text-white no-decoration" href="{{ site.scrapbox_url }}">
+            <span class="description">Scrapbox</span>
+          </a>
+        </li>
+        {% endif %}
       </ul>
     </div>
   </div>
