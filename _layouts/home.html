@@ -5,7 +5,8 @@ layout: default
 <div class="home">
   <img src="{{ site.url }}/assets/images/background.png" id="fullscreen">
   <div class="profile">
-    <img src="{{ site.url }}/assets/images/icon.png" id="avatar">
+    <img src="{{ site.url }}/assets/images/icon_grayscale.png" id="avatar_placeholder">
+    <img src="{{ site.url }}/assets/images/icon.png" id="avatar" style="display: none;" onload="loadImage();">
     <h1>{{ site.title }}</h1>
     <h3>{{ site.description }}</h3>
     <div id="sns">

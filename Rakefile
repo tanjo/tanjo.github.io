@@ -40,3 +40,37 @@ namespace :qr do
     File.open("assets/svg/bitcon.svg", "w") { |f| f.write(svg)}
   end
 end
+
+namespace :image do
+  desc "アイコン各サイズ生成"
+  task :icon do
+    sh "bundle install --path vendor/bundle"
+    sh "bundle exec rake image:resize"
+    sh "bundle exec rake image:grayscale"
+  end
+
+  task :resize do
+    require 'mini_magick'
+    image = MiniMagick::Image.open("assets/images/icon.png")
+    image.format "png"
+    image.resize "64x64"
+    image.write "assets/images/icon_64x64.png"
+    image.resize "48x48"
+    image.write "assets/images/icon_48x48.png"
+    image.resize "32x32"
+    image.write "assets/images/icon_32x32.png"
+    image.resize "24x24"
+    image.write "assets/images/icon_24x24.png"
+    image.resize "16x16"
+    image.write "assets/images/icon_16x16.png"
+  end
+
+  task :grayscale do
+    require 'mini_magick'
+    image = MiniMagick::Image.open("assets/images/icon.png")
+    image.format "png"
+    image.resize "16x16"
+    image.colorspace "Gray"
+    image.write "assets/images/icon_grayscale.png"
+  end
+end

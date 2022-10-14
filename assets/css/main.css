@@ -30,7 +30,7 @@ main,
     right: 0;
 }
 
-#avatar {
+#avatar, #avatar_placeholder {
     height: 25vh;
     border-radius: 100%;
     border: 10px solid white;
@@ -99,7 +99,7 @@ h3 {
 }
 
 @media (max-width: 450px) {
-    #avatar {
+    #avatar, #avatar_placeholder {
         height: 50vw;
         border-radius: 100%;
         border: 10px solid white;
