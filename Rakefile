@@ -1,5 +1,6 @@
 namespace :release do
-  desc "リリース作業" do
+  desc "リリース作業"
+  task :run do
     sh "trash master"
     sh "rake jekyll:clone"
     sh "rake jekyll:build"
