@@ -1,3 +1,16 @@
+namespace :release do
+  desc "リリース作業" do
+    sh "trash master"
+    sh "rake jekyll:clone"
+    sh "rake jekyll:build"
+    Dir.chdir("master") do
+      sh "git add ."
+      sh "git commit -m \"Update files\""
+      sh "git push origin master"
+    end
+  end
+end
+
 namespace :jekyll do
   desc 'serve'
   task :serve do
