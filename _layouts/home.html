@@ -3,62 +3,92 @@ layout: default
 ---
 
 <div class="home">
-  <img src="{{ site.url }}/assets/images/background.png" id="fullscreen">
+  <img src="{{ site.url }}/assets/images/background.png" id="fullscreen" />
   <div class="profile">
-    <img src="{{ site.url }}/assets/images/icon_grayscale.png" id="avatar_placeholder">
-    <img src="{{ site.url }}/assets/images/icon.png" id="avatar" style="display: none;" onload="loadImage();">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAABGdBTUEAALGPC/xhBQAAAAJiS0dEAP+Hj8y/AAAAB3RJTUUH5goOCiow4oNE/wAAASF6VFh0UmF3IHByb2ZpbGUgdHlwZSB4bXAAACiRdVJLcsUgDNtzih6ByMYmx0kfsOtMlz1+ZZK+pHktnvxsI0si6evjM73FEkiSh1fZvFrzbM2Kqy3I8W0P6y5RkwbYYmrDYEW2Pf/sHgByOmGYfI8tpWorGVnFhnMjshR0UV4ZkJ435AhSAMFNtgLVpHabvxeDQ3VlZNk4c/hc6M4m9DnCMWSRNQIjSRYwAd7bDsKn+EpY0vaKFgOifHK5M1K1klxMmFintJUudDI8GugLOJtOBEMa8QvoGl7TRVQA2V+yJqd+2s13+meNgo89IW2ZJo5X6k8BPwM2DWdWK4fsQ4F0OvVIJ+r/jXdvMK7u7OakqzvXoz2b43DVojazL39dVNI3T4CbGcAwl4YAAAABb3JOVAHPoneaAAAA/0lEQVQY0wXBy07CQBQA0JnOpS8xtRQKSAxKmoAxUTRx6S/4267cuFQJTXzFVgotbelj5l7P4f0gQBM4EREZ3/M7YaLiVoczRoRVc3D4GcIs0BgSklIqjmBSVbKWUhExoSGSUKXUh6oErS33kh15kJue0VtGaZ1s2kRuCY6nj8l4dq5UvHr9jVglRu5V79ZHYXe6fqEPa43vnoYXRsn1wryZqIxrrEqzPLfYp2Z3H5wwFveDhf7eP/la+W6B0cEB4S9q14rDes1fkv0ugWZK1qiYOBnH4A15Cj7biGdvqUuUFhiDNfhl+5OffrSS/hxZu3Nw7HbcXvabOPQsqEbX/wp0haGGmyCdAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTEwLTE0VDEwOjQyOjQ4KzAwOjAwiroRpAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0xMC0xNFQxMDo0Mjo0OCswMDowMPvnqRgAAAAodEVYdGljYzpjb3B5cmlnaHQAQ29weXJpZ2h0IEFwcGxlIEluYy4sIDIwMTgvTAVBAAAAHXRFWHRpY2M6ZGVzY3JpcHRpb24Ac1JHQiBidWlsdC1pbuOFycUAAAAASUVORK5CYII="
+      id="avatar_placeholder"
+    />
+    <img
+      src="{{ site.url }}/assets/images/icon.png"
+      id="avatar"
+      style="display: none"
+      onload="loadImage();"
+    />
     <h1>{{ site.title }}</h1>
     <h3>{{ site.description }}</h3>
     <div id="sns">
       <ul>
         {% if site.twitter_username %}
         <li>
-          <a class="fab fa-2x fa-twitter text-white no-decoration"
-            href="https://twitter.com/{{ site.twitter_username }}">
+          <a
+            class="fab fa-2x fa-twitter text-white no-decoration"
+            href="https://twitter.com/{{ site.twitter_username }}"
+          >
             <span class="description">Twitter</span>
           </a>
         </li>
         {% endif %} {% if site.github_username %}
         <li>
-          <a class="fab fa-2x fa-github text-white no-decoration" href="https://github.com/{{ site.github_username }}">
+          <a
+            class="fab fa-2x fa-github text-white no-decoration"
+            href="https://github.com/{{ site.github_username }}"
+          >
             <span class="description">GitHub</span>
           </a>
         </li>
         {% endif %} {% if site.facebook_username %}
         <li>
-          <a class="fab fa-2x fa-facebook text-white no-decoration"
-            href="https://facebook.com/{{ site.facebook_username }}">
+          <a
+            class="fab fa-2x fa-facebook text-white no-decoration"
+            href="https://facebook.com/{{ site.facebook_username }}"
+          >
             <span class="description">facebook</span>
           </a>
         </li>
         {% endif %} {% if site.stackoverflow_url %}
         <li>
-          <a class="fab fa-2x fa-stack-overflow text-white no-decoration" href="{{ site.stackoverflow_url }}">
+          <a
+            class="fab fa-2x fa-stack-overflow text-white no-decoration"
+            href="{{ site.stackoverflow_url }}"
+          >
             <span class="description">stack of</span>
           </a>
         </li>
         {% endif %} {% if site.qiita_username %}
         <li>
-          <a class="far fa-2x fa-question-circle text-white no-decoration"
-            href="https://qiita.com/{{ site.qiita_username }}">
+          <a
+            class="far fa-2x fa-question-circle text-white no-decoration"
+            href="https://qiita.com/{{ site.qiita_username }}"
+          >
             <span class="description">Qiita</span>
           </a>
         </li>
         {% endif %} {% if site.youtube_channel_url %}
         <li>
-          <a class="fab fa-2x fa-youtube text-white no-decoration" href="{{ site.youtube_channel_url }}">
+          <a
+            class="fab fa-2x fa-youtube text-white no-decoration"
+            href="{{ site.youtube_channel_url }}"
+          >
             <span class="description">Youtube</span>
           </a>
         </li>
         {% endif %} {% if site.blog_url %}
         <li>
-          <a class="fas fa-2x fa-feather-alt text-white no-decoration" href="{{ site.blog_url }}">
+          <a
+            class="fas fa-2x fa-feather-alt text-white no-decoration"
+            href="{{ site.blog_url }}"
+          >
             <span class="description">Blog</span>
           </a>
         </li>
         {% endif %} {% if site.bitcoin_address %}
         <li>
-          <a class="fab fa-2x fa-bitcoin text-white no-decoration" data-toggle="modal" data-target="#bitcoinSvgModal">
+          <a
+            class="fab fa-2x fa-bitcoin text-white no-decoration"
+            data-toggle="modal"
+            data-target="#bitcoinSvgModal"
+          >
             <span class="description">Bitcoin</span>
           </a>
           <!-- bitcoin svg modal -->
@@ -66,9 +96,14 @@ layout: default
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
-                  <img class="clipboard" src="{{ site.url }}/assets/svg/bitcoin.svg"
-                    data-clipboard="{{ site.bitcoin_address }}" data-toggle="tooltip" data-placement="top"
-                    title="Copy!">
+                  <img
+                    class="clipboard"
+                    src="{{ site.url }}/assets/svg/bitcoin.svg"
+                    data-clipboard="{{ site.bitcoin_address }}"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Copy!"
+                  />
                 </div>
               </div>
             </div>
@@ -76,19 +111,28 @@ layout: default
         </li>
         {% endif %} {% if site.amazon_wishlist_url %}
         <li>
-          <a class="fab fa-2x fa-amazon text-white no-decoration" href="{{ site.amazon_wishlist_url }}">
+          <a
+            class="fab fa-2x fa-amazon text-white no-decoration"
+            href="{{ site.amazon_wishlist_url }}"
+          >
             <span class="description">Wish List</span>
           </a>
         </li>
         {% endif %}{% if site.note_url %}
         <li>
-          <a class="far fa-2x fa-sticky-note text-white no-decoration" href="{{ site.note_url }}">
+          <a
+            class="far fa-2x fa-sticky-note text-white no-decoration"
+            href="{{ site.note_url }}"
+          >
             <span class="description">note</span>
           </a>
         </li>
         {% endif %}{% if site.note_url %}
         <li>
-          <a class="fab fa-2x fa-stripe-s text-white no-decoration" href="{{ site.scrapbox_url }}">
+          <a
+            class="fab fa-2x fa-stripe-s text-white no-decoration"
+            href="{{ site.scrapbox_url }}"
+          >
             <span class="description">Scrapbox</span>
           </a>
         </li>
